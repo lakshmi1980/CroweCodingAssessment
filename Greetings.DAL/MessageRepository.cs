@@ -1,0 +1,20 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using Greetings.Domain;
+
+namespace Greetings.DAL
+{
+    public class MessageRepository : IMessageRepository
+    {
+        public Message GetMessage()
+        {
+            return new Message()
+            {
+                Greeting = "Hello World"
+            };
+        }
+    }
+}
